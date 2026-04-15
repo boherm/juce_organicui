@@ -58,9 +58,9 @@ public:
 
 	juce::StringArray getAllKeys();
 
-	bool setValueWithData(juce::var data);
-	bool setValueWithKey(juce::String data);
-	bool setValueAtIndex(int index);
+	bool setValueWithData(juce::var data, bool silentSet = false);
+	bool setValueWithKey(juce::String data, bool silentSet = false);
+	bool setValueAtIndex(int index, bool silentSet = false);
 	void setPrev(bool loop = true, bool addToUndo = false);
 	void setNext(bool loop = true, bool addToUndo = false);
 
